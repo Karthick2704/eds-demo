@@ -11,6 +11,7 @@ export default function decorate(block) {
           const nextbtn = document.createElement('button');
           nextbtn.classList.add('btn');
           nextbtn.classList.add('btn-next');
+          nextbtn.textContent = '>';
          const node = document.createTextNode(btnNxt);
          nextbtn.append(node);
          row.replaceWith(nextbtn);
@@ -18,7 +19,7 @@ export default function decorate(block) {
           const prebtn = document.createElement('button');
           prebtn.classList.add('btn');
           prebtn.classList.add('btn-prev');
-          prebtn.textContent = '<<';
+          prebtn.textContent = '<';
           const node = document.createTextNode(btnPre);
           prebtn.append(node);
           row.replaceWith(prebtn);
