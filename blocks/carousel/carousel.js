@@ -20,7 +20,7 @@ export default function decorate(block) {
           prebtn.classList.add('btn-prev');
           const val = document.createTextNode(<<);
           const node = document.createTextNode(btnPre);
-          prebtn.append(val);
+          button.append(val);
           prebtn.append(node);
           row.replaceWith(prebtn);
       }else{
