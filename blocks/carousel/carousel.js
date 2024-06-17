@@ -18,9 +18,8 @@ export default function decorate(block) {
           const prebtn = document.createElement('button');
           prebtn.classList.add('btn');
           prebtn.classList.add('btn-prev');
-          const val = document.createTextNode("<<");
+          prebtn.textContent = '<<';
           const node = document.createTextNode(btnPre);
-          button.append(val);
           prebtn.append(node);
           row.replaceWith(prebtn);
       }else{
